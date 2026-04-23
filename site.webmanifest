@@ -1,0 +1,22 @@
+{
+  "name": "Sai Khant Min Bhone — Software Engineer",
+  "short_name": "Sai Khant",
+  "description": "Portfolio of Sai Khant Min Bhone, Senior Software Engineer specializing in Node.js, AWS, and microservices.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080a0f",
+  "theme_color": "#63b3ed",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

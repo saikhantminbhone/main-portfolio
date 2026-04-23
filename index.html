@@ -50,6 +50,15 @@
 <meta name="twitter:image:alt" content="Sai Khant Min Bhone — Senior Software Engineer">
 
 <!-- =============================================
+     FAVICON
+     ============================================= -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- =============================================
      CANONICAL + ALTERNATE
      ============================================= -->
 <link rel="canonical" href="https://www.saikhant.com/">
@@ -1110,7 +1119,30 @@
 <!-- HEADER LANDMARK -->
 <header>
   <nav aria-label="Primary navigation">
-    <a href="#" class="nav-logo" aria-label="Sai Khant Min Bhone — home">// sai.dev</a>
+    <a href="#" class="nav-logo" aria-label="Sai Khant Min Bhone — home">
+      <svg width="24" height="24" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:10px;" aria-hidden="true">
+        <defs>
+          <linearGradient id="navCg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#90cdf4"/>
+            <stop offset="100%" style="stop-color:#63b3ed"/>
+          </linearGradient>
+        </defs>
+        <!-- Background -->
+        <polygon points="28,2 172,2 198,28 198,172 172,198 28,198 2,172 2,28" fill="#151b28" stroke="rgba(99,179,237,0.30)" stroke-width="2"/>
+        <line x1="28" y1="2.5" x2="172" y2="2.5" stroke="#63b3ed" stroke-width="2" opacity="0.85"/>
+        <!-- S: top bar, left vert, middle bar, right vert, bottom bar -->
+        <rect x="35" y="52" width="58" height="10" fill="url(#navCg)"/>
+        <rect x="35" y="52" width="10" height="52" fill="url(#navCg)"/>
+        <rect x="35" y="94" width="58" height="10" fill="url(#navCg)"/>
+        <rect x="83" y="94" width="10" height="54" fill="url(#navCg)"/>
+        <rect x="35" y="138" width="58" height="10" fill="url(#navCg)"/>
+        <!-- K: stem + arms -->
+        <rect x="107" y="52" width="10" height="96" fill="url(#navCg)"/>
+        <line x1="117" y1="100" x2="158" y2="52" stroke="url(#navCg)" stroke-width="10" stroke-linecap="butt"/>
+        <line x1="117" y1="100" x2="158" y2="148" stroke="url(#navCg)" stroke-width="10" stroke-linecap="butt"/>
+        <!-- Divider dot -->
+        <rect x="98" y="98" width="5" height="5" fill="#63b3ed" opacity="0.9" transform="rotate(45 100.5 100.5)"/>
+      </svg>// sai.dev</a>
     <ul class="nav-links" role="list">
       <li><a href="#skills">skills</a></li>
       <li><a href="#experience">experience</a></li>

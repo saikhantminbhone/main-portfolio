@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90cdf4"/>
+      <stop offset="100%" style="stop-color:#63b3ed"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#151b28"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Beveled octagon background -->
+  <polygon
+    points="28,2 172,2 198,28 198,172 172,198 28,198 2,172 2,28"
+    fill="url(#bgGrad)"
+    stroke="rgba(99,179,237,0.30)"
+    stroke-width="1.5"
+  />
+
+  <!-- Top edge cyan highlight -->
+  <line x1="28" y1="2.5" x2="172" y2="2.5" stroke="#63b3ed" stroke-width="1.5" opacity="0.85"/>
+
+  <!-- Corner diamond accents -->
+  <rect x="23" y="23" width="5" height="5" fill="#63b3ed" opacity="0.5" transform="rotate(45 25.5 25.5)"/>
+  <rect x="172" y="23" width="5" height="5" fill="#63b3ed" opacity="0.35" transform="rotate(45 174.5 25.5)"/>
+
+  <!-- Bevel corner fill detail bottom-right -->
+  <polygon points="172,198 198,172 198,198" fill="rgba(99,179,237,0.05)"/>
+
+  <!--
+    ===== S LETTER =====
+    S drawn as: top bar + left-top vertical + middle bar + right-bottom vertical + bottom bar
+    Occupying x: 35–93, y: 52–148
+  -->
+  <!-- Top bar -->
+  <rect x="35" y="52" width="58" height="10" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <!-- Left vertical (top half) -->
+  <rect x="35" y="52" width="10" height="52" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <!-- Middle bar -->
+  <rect x="35" y="94" width="58" height="10" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <!-- Right vertical (bottom half) -->
+  <rect x="83" y="94" width="10" height="54" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <!-- Bottom bar -->
+  <rect x="35" y="138" width="58" height="10" fill="url(#cyanGrad)" filter="url(#glow)"/>
+
+  <!--
+    ===== K LETTER =====
+    K drawn as: vertical stem + upper diagonal + lower diagonal
+    Stem x: 107–117, full height y: 52–148
+    Arms from (117, 100) to (157, 52) and (157, 148)
+  -->
+  <!-- Vertical stem -->
+  <rect x="107" y="52" width="10" height="96" fill="url(#cyanGrad)" filter="url(#glow)"/>
+  <!-- Upper arm -->
+  <line x1="117" y1="100" x2="158" y2="52"
+        stroke="url(#cyanGrad)" stroke-width="10"
+        stroke-linecap="butt" filter="url(#glow)"/>
+  <!-- Lower arm -->
+  <line x1="117" y1="100" x2="158" y2="148"
+        stroke="url(#cyanGrad)" stroke-width="10"
+        stroke-linecap="butt" filter="url(#glow)"/>
+
+  <!-- Divider dot between S and K -->
+  <rect x="98" y="98" width="5" height="5"
+        fill="#63b3ed" opacity="0.9"
+        transform="rotate(45 100.5 100.5)"
+        filter="url(#glow)"/>
+</svg>
