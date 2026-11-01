@@ -1,22 +1,15 @@
 {
   "name": "Sai Khant Min Bhone — Software Engineer",
   "short_name": "Sai Khant",
-  "description": "Portfolio of Sai Khant Min Bhone, Senior Software Engineer specializing in Node.js, AWS, and microservices.",
+  "description": "Portfolio of Sai Khant Min Bhone, software engineer — backend, full-stack and Web3.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080a0f",
-  "theme_color": "#63b3ed",
+  "background_color": "#fbfbfd",
+  "theme_color": "#fbfbfd",
   "icons": [
-    {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    }
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
